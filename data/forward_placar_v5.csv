@@ -1,0 +1,5 @@
+modelo,operacoes,wins,losses,win_rate_pct,liquido_r,media_r,profit_factor,max_drawdown_r,liquido_usd
+V5_conservador,2,2,0,100.0,2.0129709913109988,1.0064854956554994,inf,0.0,537.25
+V5_exclusao,2,2,0,100.0,2.0129709913109988,1.0064854956554994,inf,0.0,537.25
+Somente_ambiguos,0,0,0,0.0,0.0,0.0,0.0,0.0,0.0
+Nao_ambiguos,2,2,0,100.0,2.0129709913109988,1.0064854956554994,inf,0.0,537.25

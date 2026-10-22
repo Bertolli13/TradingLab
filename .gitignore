@@ -1,0 +1,30 @@
+# Python
+.venv/
+venv/
+__pycache__/
+*.pyc
+*.pyo
+
+# Segredos
+.env
+.env.*
+*.key
+*.pem
+data/.mnq-feed-token
+
+# Arquivos temporarios do antigo PAPER/live
+data/*.lock
+data/nq_paper_live.parquet
+
+# Sistema / IDE
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Temporarios
+*.tmp
+*.bak
+*.log
+
+data/backups/

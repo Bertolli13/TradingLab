@@ -1,0 +1,26 @@
+{
+  "config": {
+    "tick": 0.25,
+    "penetracao_ticks": 1,
+    "valor_ponto": 2.0,
+    "contratos": 1,
+    "custo_round_trip": 3.0,
+    "slippage_total_ticks": 2.0,
+    "fim_sessao": "16:40",
+    "invalidar_posicao": false,
+    "rr_alvo": 1.5,
+    "stop_modelo": "range_75"
+  },
+  "fontes": {
+    "nq_forward_v4.parquet": "feca09bc58da6f2173d110d3a0386ab9fde701c48810426151fc563e981351bf",
+    "orb_fvg_forward_v4.csv": "d512e3bbeab86374065f6c95ea917a26d74f000c9a9e2500227532aac337b9b7",
+    "orb_rompimentos_forward_v4.csv": "a477fa81bbc58c599094cd86b8761b1abba3e5ee42a7de3698d5bece654dde18",
+    "backtest_orb_fvg.csv": "40f401fb4e911300f3fdaf18eaf2cb4c5c3e96f5644fc4fdad009c60bde08a59",
+    "backtest_v2.csv": "6e41ef7b201f6661b8ec9aa7a8896e85f107449da2eea81a2dd301439188c069"
+  },
+  "script_sha256": "98fddcb8141f59d6637573b1abc1f5d7852b530b84342599eaa991fc38093a73",
+  "candles": 825661,
+  "sinais": 215,
+  "aviso": "Hipóteses OHLC/OLHC condicionais, não fills reais nem limites universais.",
+  "comparacao": "V1/V2 preservados; líquido recalculado com custos desta execução."
+}

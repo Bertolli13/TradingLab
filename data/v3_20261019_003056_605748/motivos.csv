@@ -1,0 +1,16 @@
+cenario,motivo_saida,quantidade
+conservador,ALVO,86
+conservador,DADOS_INVALIDOS,1
+conservador,ENCERRAMENTO,21
+conservador,SEM_RETESTE,19
+conservador,STOP,86
+exclusao,ALVO,86
+exclusao,DADOS_INVALIDOS,1
+exclusao,ENCERRAMENTO,21
+exclusao,SEM_RETESTE,19
+exclusao,STOP,86
+otimista,ALVO,86
+otimista,DADOS_INVALIDOS,1
+otimista,ENCERRAMENTO,21
+otimista,SEM_RETESTE,19
+otimista,STOP,86

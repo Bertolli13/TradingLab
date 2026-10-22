@@ -1,0 +1,7 @@
+data,direcao,horario_fvg,entrada,stop,alvo,risco_pontos,ordem_ativa_em,cenario,ambiguo,alternativas,incluida,executada,execucao_possivel,horario_entrada,horario_saida,preco_saida,motivo_saida,erro,risco_usd,custo_total_usd,custo_r,resultado_bruto_r,resultado_liquido_r,resultado_liquido_usd
+2025-01-20,VENDA,2025-01-20 10:21:00-05:00,21699.0,21748.125,21615.4875,49.125,2025-01-20 15:22:00+00:00,otimista,False,,False,False,,,,,DADOS_INVALIDOS,SESSAO_INCOMPLETA,,,,,,
+2025-01-20,VENDA,2025-01-20 10:21:00-05:00,21699.0,21748.125,21615.4875,49.125,2025-01-20 15:22:00+00:00,conservador,False,,False,False,,,,,DADOS_INVALIDOS,SESSAO_INCOMPLETA,,,,,,
+2025-01-20,VENDA,2025-01-20 10:21:00-05:00,21699.0,21748.125,21615.4875,49.125,2025-01-20 15:22:00+00:00,exclusao,False,,False,False,,,,,DADOS_INVALIDOS,SESSAO_INCOMPLETA,,,,,,
+2026-09-07,VENDA,2026-09-07 11:06:00-04:00,29595.0,29625.9375,29542.40625,30.9375,2026-09-07 15:07:00+00:00,otimista,False,,False,False,,,,,DADOS_INVALIDOS,SESSAO_INCOMPLETA,,,,,,
+2026-09-07,VENDA,2026-09-07 11:06:00-04:00,29595.0,29625.9375,29542.40625,30.9375,2026-09-07 15:07:00+00:00,conservador,False,,False,False,,,,,DADOS_INVALIDOS,SESSAO_INCOMPLETA,,,,,,
+2026-09-07,VENDA,2026-09-07 11:06:00-04:00,29595.0,29625.9375,29542.40625,30.9375,2026-09-07 15:07:00+00:00,exclusao,False,,False,False,,,,,DADOS_INVALIDOS,SESSAO_INCOMPLETA,,,,,,

@@ -1,0 +1,11 @@
+cenario,motivo_saida,quantidade
+conservador,ALVO,116
+conservador,SEM_RETESTE,19
+conservador,STOP,78
+exclusao,ALVO,90
+exclusao,EXCLUIDA_AMBIGUIDADE,39
+exclusao,SEM_RETESTE,19
+exclusao,STOP,65
+otimista,ALVO,129
+otimista,SEM_RETESTE,19
+otimista,STOP,65

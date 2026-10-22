@@ -1,0 +1,2 @@
+simulacoes,trades_por_simulacao,resultado_historico_r,media_resultado_simulado_r,mediana_resultado_simulado_r,pior_1pct_resultado_r,melhor_99pct_resultado_r,mediana_max_drawdown_r,drawdown_95pct_r,prob_resultado_negativo_pct,prob_dd_10r_pct
+10000,66,14.54895654095169,14.58920666360659,14.534835905443954,-7.74081785113812,34.927294226088264,-5.422760155029026,-11.292750742926748,5.33,8.48
