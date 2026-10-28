@@ -94,6 +94,14 @@ def dentro_sessao(
     hora = ts_ny.strftime("%H:%M")
     return inicio <= hora < fim
 
+def dentro_horario_bloqueado(
+    ts_ny: pd.Timestamp,
+    inicio: str,
+    fim: str,
+) -> bool:
+    hora = ts_ny.strftime("%H:%M")
+
+    return inicio <= hora < fim
 
 def detectar_pivos(
     df: pd.DataFrame,
@@ -326,7 +334,12 @@ def gerar_sinais(
             cfg.session_start,
             cfg.session_end,
         )
-
+        
+        blocked_time = dentro_horario_bloqueado(
+            ts_ny,
+            cfg.blocked_start,
+            cfg.blocked_end,
+        )
         # --------------------------------------------------
         # SETUPS LONG
         # --------------------------------------------------
@@ -347,6 +360,7 @@ def gerar_sinais(
             and (rev_long or cont_long)
             and gap_ok
             and in_session
+            and not blocked_time
             and b_bar is not None
             and (i - b_bar)
             <= cfg.max_setup_age_bars
@@ -367,10 +381,9 @@ def gerar_sinais(
 
             if (
                 row["close"] > entry
-                and risco
-                <= cfg.max_stop_points
-                and risco
-                > cfg.tick_size
+                and risco >= cfg.min_stop_points
+                and risco <= cfg.max_stop_points
+                and risco > cfg.tick_size
             ):
                 tipo = (
                     "REVERSAO"
@@ -426,6 +439,7 @@ def gerar_sinais(
             and (rev_short or cont_short)
             and gap_ok
             and in_session
+            and not blocked_time
             and s_bar is not None
             and (i - s_bar)
             <= cfg.max_setup_age_bars
@@ -446,10 +460,9 @@ def gerar_sinais(
 
             if (
                 row["close"] < entry
-                and risco
-                <= cfg.max_stop_points
-                and risco
-                > cfg.tick_size
+                and risco >= cfg.min_stop_points
+                and risco <= cfg.max_stop_points
+                and risco > cfg.tick_size
             ):
                 tipo = (
                     "REVERSAO"

@@ -21,16 +21,17 @@ class MSSFVGBaselineConfig:
     # --------------------------------------------------
     entry_pct_fvg: float = 50.0
     stop_buffer_points: float = 0.0
+    min_stop_points: float = 12.5
     max_stop_points: float = 50.0
 
-    # --------------------------------------------------
+    # --------------------------------------------------    
     # Setups
     # --------------------------------------------------
     enable_long: bool = True
     enable_short: bool = True
 
     enable_reversal: bool = True
-    enable_continuation: bool = True
+    enable_continuation: bool = False
 
     min_minutes_between_setups: int = 60
 
@@ -41,6 +42,9 @@ class MSSFVGBaselineConfig:
 
     session_start: str = "09:30"
     session_end: str = "16:00"
+
+    blocked_start: str = "11:00"
+    blocked_end: str = "12:00"
 
     # --------------------------------------------------
     # Gestão
